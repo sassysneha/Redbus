@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>RedBus</title>
+  <link rel="stylesheet" href="Rbus.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>RedBus</h1>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Book your bus tickets online</h2>
+      <form action="/book" method="POST">
+        <label for="from">From:</label>
+        <input type="text" name="from" id="from" placeholder="Enter source city" />
+
+        <label for="to">To:</label>
+        <input type="text" name="to" id="to" placeholder="Enter destination city" />
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" />
+
+        <label for="num_passengers">Number of passengers:</label>
+        <input type="number" name="num_passengers" id="num_passengers" min="1" max="10" />
+
+        <input type="submit" value="Search" />
+      </form>
+    </section>
+
+    <section>
+      <h2>Available buses</h2>
+      <table id="buses-table">
+        <tr>
+          <th>Bus name</th>
+          <th>Departure time</th>
+          <th>Arrival time</th>
+          <th>Price</th>
+          <th>Book</th>
+        </tr>
+
+        <!-- This section will be filled dynamically with data from the API -->
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2023 RedBus</p>
+  </footer>
+</body>
+
+</html>

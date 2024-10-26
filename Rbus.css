@@ -1,0 +1,90 @@
+/* Layout */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #a72d2d;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main */
+main {
+  padding: 20px 0;
+}
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+main form {
+  width: 100%;
+  max-width: 600px;
+}
+
+main form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+main form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+main form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+  }
